@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking Ticket</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assests/css/booking.css" />
+    <link rel="stylesheet" href="./assests/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
+
+  <body class="dark-theme">
+    <!-- top bar section -->
+
+    <section>
+      <div class="container my-3">
+        <div class="nav-bar d-flex justify-content-between align-items-center">
+            <div class="txt-heading">
+              <a href="./">Better Web Confrence</a>
+            </div>
+          <div class="head align-items-center">
+            <!--<span class="buy-t">Buy Ticket</span>-->
+
+            <span class="toogle_button">
+              <img src="./public/moon.svg" class="moon" alt="" srcset="" />
+              <span class="ball"></span>
+              <img src="./public/sun.svg" class="sun" alt="" srcset="" />
+            </span>
+
+            <!-- <img class="light" src="./public/Light.png" alt=""> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="top2 mb-3  ">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-6 col-10 mx-auto  d-flex align-items-center my-md-0 my-5">
+            <p
+              class="big-heading font-white p-0 m-0"
+              style="height: fit-content"
+            >
+              Ticket <br />
+              Booking
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-6 col-10 mx-auto spider1">
+              <a href="./">
+            <img src="./public/untitled1-1@2x.png" class="img-fluid w-75" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-6 col-10 mx-auto">
+            <h3 class="font-white mb-4">You are purchasing</h3>
+            <div class="card card-gray">
+              <div class="card-body">
+                <span>All-Access Pass</span>
+                <h4 class="f_bold mt-1">EUR 1,500</h4>
+                <div class="mx-4 content">
+                  <p>One day pass access all seminors</p>
+                  <p>Lunch and snacks</p>
+                  <p>Meet seminor speakers</p>
+                  <p>Seat</p>
+                </div>
+              </div>
+            </div>
+            <div class="card card-gray"style="margin-top:30px;">
+              <div class="card-body">
+                <span>One Day Pass</span>
+                <h4 class="f_bold mt-1">EUR 850</h4>
+                <div class="mx-4 content">
+                  <p>One day pass access all seminors</p>
+                  <p>Lunch and snacks</p>
+                  <p>Meet seminor speakers</p>
+                  <p>Seat</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="btn gray-btn my-4"><a href="./Select-ticket.html">Change Ticket</a></div>
+          </div>
+
+          <div class="col-6 col-lg-6 col-10 mx-auto pe-5">
+            <h3 class="font-white mb-4">Ticket Information</h3>
+
+            <div class="total_amount">
+              <div class="row">
+                <div class="col-8">
+                  <p class="font-white p-0 m-0 mb-1">All Access Pass Ticket</p>
+                  <div
+                    class="qty_btn d-flex font-white w-100 border align-items-center justify-content-center py-2"
+                  >
+                    <i class="fa fa-minus" id="descrease"></i>
+                    <p class="text-center w-75 p-0 m-0" id="value">2</p>
+                    <i class="fa fa-plus" id="increase"></i>
+                  </div>
+                </div>
+
+                <div
+                  class="col-4 d-flex align-items-end flex-wrap my-font-white"
+                >
+                  <div class="total">
+                   <!-- <span class="p-0 m-0 w-100 f_mono_bold">2 x Eur 1,500</span>-->
+                    <h3 class="w-100 p-0 m-0 f_bold">Eur 3,000</h3>
+                  </div>
+                  
+                </div>
+                <div class="col-8"style="margin-top:20px;">
+                  <p class="font-white p-0 m-0 mb-1">One Day Pass Ticket</p>
+                  <div
+                    class="qty_btn d-flex font-white w-100 border align-items-center justify-content-center py-2"
+                  >
+                    <i class="fa fa-minus" id="descrease"></i>
+                    <p class="text-center w-75 p-0 m-0" id="value">1</p>
+                    <i class="fa fa-plus" id="increase"></i>
+                  </div>
+                </div>
+
+                <div
+                  class="col-4 d-flex align-items-end flex-wrap my-font-white"
+                >
+                  <div class="total">
+                    <!--<span class="p-0 m-0 w-100 f_mono_bold">1 x Eur 850</span>-->
+                    <h3 class="w-100 p-0 m-0 f_bold">Eur 850</h3>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+
+            <h3 class="font-white my-4">Your Information</h3>
+
+            <div class="mb-5">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Johnathan@email.com"
+              />
+            </div>
+
+            <div class="mb-5">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Full Name</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="johnathan Valdez"
+              />
+            </div>
+
+            <div class="mb-5">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Gibraltargatan 88, 411 05, Götegorg"
+              />
+            </div>
+
+            <h3 class="font-white mb-4">Meal Preferences</h3>
+
+            <div class="mb-5">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Food Selection</label
+              >
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Vegan
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  No Dairy Products (milk, cheese, etc)
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  No Meat
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Gluten Free
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  No Fish
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  No Preferences
+                </label>
+              </div>
+            </div>
+
+            <div class="btn pink-btn my-4 py-3 w-100">
+              Purchase Now 
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-5">
+      <div class="container font-white">
+        <div class="row">
+          <div class="col-8 mt-5">
+            <p class="heading36">
+              Join our newsletter to get latest <br />
+              updates about conference.
+            </p>
+          </div>
+          <div class="col-4">
+            <img src="./public/abstract.svg" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+<footer class="pb-5 mb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-10 mx-auto d-flex align-items-end">
+                        <div class=" myinput">
+                            <!-- <label for="exampleFormControlInput1" class="form-label"
+                >Full Name</label
+              > -->
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Email Address" />
+                        </div>
+
+                        <div class="btn pink-btn py-3 w-md-25 mx-md-5">Subscribe</div>
+                    </div>
+
+                    <div class="col-md-6 col-10 mx-auto " style="text-align: right;">
+                        <div class="text-white">
+                            <i class="fa fa-twitter me-3"></i>
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </div>
+
+                        <p class="copyright">Better Web Conf @ 2023</p>
+                        <ul class="footer-menu">
+                            <li>Privacy Policy</li>
+                            <li>Terms & Conference</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <script>
+      $(document).ready(function () {
+        
+        var value = 1;
+        
+        $("#value").text(value);
+        
+        $("#descrease").click(function(){
+            if(value > 1){
+                value--;
+                $("#value").text(value);
+            }
+        });
+        $("#increase").click(function(){
+            value++;
+            $("#value").text(value);
+        });
+        
+        
+        
+        $(".sun").click(function(){
+                    $(".ball").addClass("sift_right_ball");
+                    $("body").removeClass("dark-theme");
+                    setCookie("nightmode",false,365);
+                });
+
+                $(".moon").click(function(){
+                    $(".ball").removeClass("sift_right_ball");
+                    $("body").addClass("dark-theme");
+                    setCookie("nightmode",true,365);
+                });
+        
+                setTimeout(function(){
+                    var res = checkCookie();
+                    console.log("type -"+typeof res);
+                    if(res === "true"){
+                        console.log("true is call");
+                        $(".ball").removeClass("sift_right_ball");
+                        $("body").addClass("dark-theme");
+                    }else{
+                        console.log("false is call");
+                        $(".ball").addClass("sift_right_ball");
+                        $("body").removeClass("dark-theme");
+                        
+                    }
+                    console.log(res);
+                }, 1000)
+      });
+    </script>
+    
+    <script src="./assests/js/night.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

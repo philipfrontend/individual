@@ -1,0 +1,252 @@
+/* :root {
+    --background: #111617;
+    --active-border: #ea3351;
+    --text-gray: #73898e;
+    --content-gray:#FFFFFF;
+    --card-back: #1b1f20;
+    --buton: #ea3351;
+    --label-color:#D6D8DA;
+
+  } */
+
+body {
+  font-family: f_bold;
+}
+
+.f_regular {
+  font-family: regular;
+}
+
+.f_bold {
+  font-family: f_bold !important;
+}
+.f_mono_regular {
+  font-family: monoregular;
+}
+.f_mono_bold {
+  font-family: monobold;
+}
+.mainBody {
+  background-color: var(--background);
+  font-family: regular;
+}
+.acess {
+  font-family: monobold;
+  font-size: 16px;
+}
+
+.purchaseleft h4 {
+  font-family: f_bold;
+}
+
+.font-white {
+  color: var(--primary-black);
+}
+
+
+
+
+
+.spider1 {
+  transition: transform  .2s ease;
+  animation: swing 3s infinite;
+  transform-origin: top;
+}
+/* 3. Animatie */
+@keyframes swing {
+  0%,
+  100% {
+    transform: translate(0);
+    
+  }
+
+  50% {
+    transform: translate(30px, -20px);
+    
+  }
+}
+
+
+#increase, #descrease {
+    cursor: pointer;
+    padding: 5px 40px;
+}
+
+
+
+.big-heading {
+  font-size: 85px;
+  font-weight: bold;
+  font-family: f_bold;
+  line-height: 0.9;
+}
+
+.card-gray {
+  background-color: var(--card-back);
+  color: var(--primary-black);
+  border-radius: 24px;
+  width: 50%;
+  padding: 15px;
+}
+
+.heading36 {
+  font-size: 36px;
+}
+
+.content {
+  color: var(--content-gray);
+  width: 70%;
+  font-family: monoregular;
+  font-size: 14px;
+  margin-top: 25px;
+}
+.gray-btn {
+    color: var(--primary-black);
+  background-color: var(--card-back);
+  width: 50%;
+  font-family: f_bold;
+  font-size: 16px;
+}
+
+.gray-btn:hover{
+    background: var(--buton);
+    color: var(--speaker-text-color);
+}
+
+.pink-btn {
+  color: var(--speaker-text-color);
+  background-color: var(--buton);
+
+  height: fit-content;
+}
+
+.line_height_05 {
+  line-height: 0.5;
+}
+.my-text-white {
+  color: white;
+  line-height: 0.5;
+}
+
+.form-label {
+  color: white;
+}
+.form-control {
+  background-color: transparent;
+  color: white;
+  border-radius: 0;
+  padding: 15px 10px;
+}
+
+.form-control::placeholder {
+  color: var(--text-gray);
+}
+
+label {
+  color: var(--label-color) !important;
+  font-family: monoregular;
+  font-size: 16px;
+}
+.myinput {
+  width: 50%;
+}
+.myinput input {
+  background-color: transparent !important;
+  border-radius: 0;
+  box-shadow: none !important;
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid;
+}
+
+.footer-menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  padding-left: 20px;
+  color: var(--text-gray);
+  margin: 0;
+}
+
+.text-white{
+  color: var(--about-lorem)!important;  
+}
+
+.copyright {
+  font-size: 20px;
+  color: var(--about-lorem);
+}
+
+
+.total span, .total h3{
+    color: var(--primary-black);
+}
+
+@media only screen and (max-width: 1000px) {
+  .card-gray,
+  .gray-btn {
+    width: 70% !important;
+  }
+  .total_amount h3 {
+    font-size: 18px;
+  }
+  .total_amount span {
+    font-size: 10px;
+  }
+  .heading36 {
+    font-size: 25px;
+  }
+  .footer-menu {
+    font-size: 12px;
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .heading36 {
+    font-size: 19px;
+  }
+  .big-heading {
+    font-size: 55px;
+  }
+
+  .purchase-container h3,
+  .ticket_Container h3 {
+    font-size: 28px;
+  }
+
+  .eur_font {
+    font-size: 17px !important;
+  }
+
+  .purchase-container .acess {
+    font-size: 12px;
+  }
+  .card-gray {
+    width: 100% !important;
+    padding: 2px;
+  }
+
+  .gray-btn {
+    width: 100% !important;
+    font-size: 14px;
+  }
+  .content {
+    width: 80%;
+  }
+  .myinput {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .txt-heading {
+    font-size: 18px!important;
+    width: 32%;
+    }
+    .col-md-6.col-lg-6.col-10.mx-auto.spider1 {
+    position: absolute;
+    right: -28%;
+    z-index: -1;
+}
+}

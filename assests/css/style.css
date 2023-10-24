@@ -1,0 +1,262 @@
+:root {
+  /* --background: #111617; */
+  --background:var(--secondary)
+  --active-border: #ea3351;
+  --text-gray: #73898e;
+  --card-back: #F5F5F5;
+  --card-text:#1B1F20;
+  --card-btn:#E6E6E6;
+  --buton: #EA3351;
+  --button-back:var(--card-btn);
+  /* --button-back: #292d2e; */
+  --btn-gradient: black;
+  --li-color: #242b33;
+  --primary-black:#111617;
+  --secondary:white;
+  --about-lorem:#111617;
+  --speaker-text-color:white;
+  --label-color:#1B1F20;
+  --guthcolor:black;
+}
+.dark-theme{
+  --background:#111617;
+  --active-border: #ea3351;
+  --text-gray: #73898e;
+  --card-back: #1b1f20;
+  --card-text:#73898E;
+  --buton: #ea3351;
+  --button-back: #292d2e;
+  --primary-black:white;
+  --secondary:black;
+  --speaker-text-color:white;
+  --label-color:#D6D8DA;
+  --about-lorem:white;
+  --btn-gradient: linear-gradient(#fce300, #01c921);
+  --guthcolor:linear-gradient(90deg, #fce300 0%, #01c921 100%)
+}
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: regular;
+  src: url(../font/SpaceGrotesk-Regular.ttf);
+}
+
+@font-face {
+  font-family: f_bold;
+  src: url(../font/SpaceGrotesk-Bold.ttf);
+}
+
+@font-face {
+  font-family: semibold;
+  src: url(../font/SpaceGrotesk-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: f_medium;
+  src: url(../font/SpaceGrotesk-Medium.ttf);
+}
+
+@font-face {
+  font-family: monobold;
+  src: url(../font/SpaceMono-Bold.ttf);
+}
+
+@font-face {
+  font-family: monoregular;
+  src: url(../font/SpaceMono-Regular.ttf);
+}
+
+/* select ticket section */
+body {
+  background-color: var(--background);
+  font-family: regular;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.buy-t {
+  padding: 12px 30px;
+  font-family: monobold;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-black);
+  border-radius: 5px;
+  border: 1px solid var(--primary-black);
+  cursor: pointer;
+}
+.txt-heading {
+  color: var(--primary-black);
+  font-family: monobold;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+}
+
+
+.he-text {
+  color: var(--primary-black);
+  font-family: f_bold;
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 0.9;
+}
+/* heading */
+.heading {
+  color: var(--primary-black);
+
+  font-family: f_bold;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 84.1%;
+}
+.link {
+  cursor: pointer;
+  color: var(--primary-black);
+  top: 12px;
+  text-align: center;
+  font-family: f_bold;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+.card {
+  color: var(--primary-black);
+  height: fit-content;
+  border-radius: 24px;
+  font-family: monobold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 88.9%;
+  border: none;
+  background-color: var(--card-back);
+}
+.title {
+  color: var(--primary-black);
+
+  font-family: f_bold;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 88.9%;
+}
+.card-list {
+  list-style: none;
+}
+.card-list li {
+  padding: 12px 12px 12px 0;
+  color: var(--card-text);
+  /* color: rgba(255, 255, 255, 0.65); */
+  font-family: monobold;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.select_ticket {
+  color: var(--primary-black);
+  cursor: pointer;
+  font-family: f_bold;
+  text-align: center;
+  background-color: var(--button-back);
+  padding: 15px 30px;
+  border-radius: 5px;
+}
+.select_ticket:hover {
+  background-color: var(--buton);
+  color: var(--speaker-text-color);
+}
+ul.card-list {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* toogle button css */
+
+.ball{
+  background: var(--primary-black);
+  width:20px;
+  height: 20px;
+  
+}
+
+.dark-theme .toogle_button{
+  background: var(--card-back);
+}
+
+.head{
+  display: flex;
+}
+
+.toogle_button{
+  margin-left: 15px;
+  display: block;
+  width: 101.538px;
+  height: 52px;
+  position: relative;
+  border-radius: 59px;
+  border: 1px solid rgba(27, 31, 32, 0.15);
+  background: #F7F7F7;
+  display: flex;
+  cursor: pointer;
+}
+
+.moon, .sun, .ball{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.ball{
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  margin: 2px;
+  
+}
+
+
+
+.sift_right_ball{
+  right: 2px;
+  z-index: 1;
+}
+
+.moon{
+  left: 4px;
+}
+.sun{
+  right: 4px;
+}
+
+/* tooggle button css */
+
+@media only screen and (max-width: 600px) {
+  .heading {
+    font-size: 40px;
+  }
+  .select_ticket {
+    font-size: 13px;
+    padding: 10px 15px;
+  }
+}
+
+.loc {
+margin-bottom:14px;
+  font-size: 16px;
+  font-family: monobold;
+  line-height: 81.9%;
+}
